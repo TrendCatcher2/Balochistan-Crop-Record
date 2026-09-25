@@ -1,0 +1,8 @@
+{
+  "name": "Makran & Global Date Palm Atlas - Phoenix GIS",
+  "description": "Geospatial intelligence map for date palms (Phoenix dactylifera), farm-level tree counting, aerial oasis views, global trade and production, with deep-dive focus on Makran, Balochistan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

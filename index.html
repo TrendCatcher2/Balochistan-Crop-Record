@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balochistan Crop Record - بلوچستان فصلوں کا ریکارڈ</title>
+    <meta name="description" content="Balochistan Crop Record - Official Agriculture Extension Department portal, DG Agriculture Extension Balochistan, Rani Bagh Sariab Road Quetta." />
+    <meta property="og:title" content="Balochistan Crop Record - بلوچستان فصلوں کا ریکارڈ" />
+    <meta property="og:description" content="Balochistan Crop Record - Official Agriculture Extension Department portal, DG Agriculture Extension Balochistan, Rani Bagh Sariab Road Quetta." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'palm': {
+                50: '#f0fdf4',
+                100: '#dcfce7',
+                200: '#bbf7d0',
+                300: '#86efac',
+                400: '#4ade80',
+                500: '#22c55e',
+                600: '#16a34a',
+                700: '#15803d',
+                800: '#166534',
+                900: '#14532d',
+                950: '#052e16',
+              },
+              'oasis': {
+                water: '#267b82',
+                'water-light': '#3da2a8',
+                'water-dark': '#194f54',
+                channel: '#0ea5e9',
+              },
+              'date': {
+                amber: '#d97706',
+                caramel: '#b45309',
+                honey: '#f59e0b',
+                dark: '#381e11',
+                black: '#1f130b',
+                rutab: '#92400e',
+              },
+              'sand': {
+                50: '#faf8f2',
+                100: '#f4f0e4',
+                200: '#e8e1cd',
+                300: '#d8cdb3',
+                400: '#c5b694',
+                500: '#ad9b73',
+              },
+              'makran': {
+                river: '#38bdf8',
+                karez: '#059669',
+                mountain: '#854d0e',
+                oasis: '#15803d',
+                kech: '#047857',
+                panjgur: '#065f46',
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+              display: ['"Cinzel"', 'serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      }
+      /* Custom scrollbars */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.04);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(45, 106, 79, 0.25);
+        border-radius: 9999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(45, 106, 79, 0.45);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "d3": "https://esm.sh/d3@7.9.0",
+    "topojson-client": "https://esm.sh/topojson-client@3.1.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#f9f8f4] text-[#1c2826] selection:bg-amber-400/30 selection:text-emerald-950">
+    <div id="root" class="h-full w-full"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
